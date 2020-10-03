@@ -1,3 +1,12 @@
 ion-icon {
   font-size: 24px;
 }
+p{
+  background-color: rgba(0, 202, 192, 0.897);
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+a{
+  color:black ;
+  font-size: 20px; 
+}
