@@ -9,14 +9,13 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { RedirectGuard} from './redirect.guard';
 
 @NgModule({
   declarations: [AppComponent, ProfileComponent, AboutComponent, ProjectsComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
+  providers: [RedirectGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
