@@ -5,10 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class RedirectGuard implements CanActivate {
   constructor(private router: Router) {}
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    window.location.href = next.data['externalUrl'];
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+    window.location.href = rout.data['externalUrl'];
     return true;
   }
 }

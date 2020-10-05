@@ -12,7 +12,7 @@ const routes: Routes = [
     canActivate: [RedirectGuard],
     component: ProjectsComponent,
     data: {
-      externalUrl: "https://stackblitz.com/"
+      externalUrl: "https://stackblitz.com"
     }
   },
 ];
