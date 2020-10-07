@@ -1,36 +1,40 @@
-<ion-list><p><a href routerLink="/about" > ABOUT </a>
+<ion-list>
+  <p><a href routerLink="/about" > ABOUT </a>
 &nbsp; &nbsp; &nbsp;
 <a href routerLink="/projects"> PROJECTS </a></p>
 <ion-grid>
 <ion-row>
 <ion-col>
+<div class="ion-text-nowrap">
 <ion-card>
 <ion-card-header>
-<ion-card-subtitle color="success">Calculator</ion-card-subtitle>
+<ion-card-subtitle color="success">calculator</ion-card-subtitle>
 </ion-card-header>
 <ion-card-content>
 <ion-item>
 <ion-input type="text" placeholder="number1" name="FirstNumber" [(ngModel)]="FirstNumber"></ion-input></ion-item>
 <ion-item>
 <ion-input type="text" placeholder="number2" name="SecondNumber" [(ngModel)]="SecondNumber"></ion-input>
-</ion-item><ion-item>
+</ion-item>
+<ion-item text-wrap>
 <ion-icon name="add-circle-outline" color="primary" (click)="addNumber(sum)" value="addNumber"></ion-icon>
 &nbsp; &nbsp; &nbsp;
 <ion-icon name="remove-circle-outline" color="danger" (click)="MinusNumber(sum)" value="addNumber"></ion-icon>
 &nbsp; &nbsp; &nbsp;
 <ion-icon name="code-slash-outline" (click)="divideNumber(sum)" value="addNumber"></ion-icon>
-
+&nbsp; &nbsp; &nbsp;
 <ion-icon name="close-circle-outline" (click)="MultyNumber(sum)" value="addNumber" color="success" ></ion-icon>
-</ion-item><ion-item>
-  answer: {{sum}}
 </ion-item>
+<ion-item>
+answer: {{sum}}
+</ion-item>
+
 </ion-card-content>
 </ion-card>
+</div>
 </ion-col>
 </ion-row>
 </ion-grid>
-</ion-list>
-
 
 
 
