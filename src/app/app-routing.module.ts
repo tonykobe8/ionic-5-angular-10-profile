@@ -8,13 +8,10 @@ const routes: Routes = [
   { path: 'tab', loadChildren: './tabs/tabs.module#TabsPageModule' },{path:'' ,component:ProfileComponent},
   {path:'profile' ,component:ProfileComponent},{path:'about' ,component:AboutComponent},
   {
-    path: "projects",
-    canActivate: [RedirectGuard],
-    component: ProjectsComponent,
-    data: {
-      externalUrl: "https://"
+    path: "projects", component: ProjectsComponent,
+    
     }
-  },
+  
 ];
 @NgModule({
   imports: [

@@ -1,12 +1,33 @@
-<p><a href routerLink="/about" > ABOUT </a>
+<ion-list><p><a href routerLink="/about" > ABOUT </a>
 &nbsp; &nbsp; &nbsp;
 <a href routerLink="/projects"> PROJECTS </a></p>
+<ion-grid>
+<ion-row>
+<ion-col>
+<ion-card>
+<ion-card-header>
+<ion-card-subtitle color="success">Calculator</ion-card-subtitle>
+</ion-card-header>
+<ion-card-content>
 <ion-item>
-<ion-input placeholder="Enter Input"></ion-input>
-<ion-input placeholder="Enter Input"></ion-input>
+<ion-input placeholder="number1" name="number1" [(ngModel)]="number1"></ion-input></ion-item>
+<ion-item>
+<ion-input placeholder="number2" name="number2" [(ngModel)]="number2"></ion-input>
+</ion-item><ion-item>
+<ion-icon name="add-circle-outline" color="primary" click="addNumber()"></ion-icon>
+&nbsp; &nbsp; &nbsp;
+<ion-icon name="remove-circle-outline" color="danger"></ion-icon>
+&nbsp; &nbsp; &nbsp;
+<ion-icon name="close-circle-outline" color="success"></ion-icon>
+&nbsp; &nbsp; &nbsp;
+<ion-icon name="code-slash-outline" color="dark"></ion-icon>
 </ion-item>
-
-
+</ion-card-content>
+</ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-list>
 
 
 
