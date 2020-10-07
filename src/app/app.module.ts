@@ -14,7 +14,7 @@ import { RedirectGuard} from './redirect.guard';
 @NgModule({
   declarations: [AppComponent, ProfileComponent, AboutComponent, ProjectsComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
   providers: [RedirectGuard],
   bootstrap: [AppComponent]
 })

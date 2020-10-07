@@ -6,12 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+public number1;
+public number2;
+public sum;
+constructor() { }
 
-  constructor() { }
-addNumber(){
-  console.log('hhh');
-}
+
+
   ngOnInit() {
   }
- 
+  
+addNumber(va){
+  this.number1;
+  this.number2;
+let sum = this.number1 + this.number2 ;
+console.log(sum);
+}
+
 }
