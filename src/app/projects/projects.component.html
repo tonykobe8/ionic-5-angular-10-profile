@@ -15,9 +15,15 @@
 <ion-input type="text" placeholder="number2" name="SecondNumber" [(ngModel)]="SecondNumber"></ion-input>
 </ion-item><ion-item>
 <ion-icon name="add-circle-outline" color="primary" (click)="addNumber(sum)" value="addNumber"></ion-icon>
+&nbsp; &nbsp; &nbsp;
+<ion-icon name="remove-circle-outline" color="danger" (click)="MinusNumber(sum)" value="addNumber"></ion-icon>
+&nbsp; &nbsp; &nbsp;
+<ion-icon name="code-slash-outline" (click)="divideNumber(sum)" value="addNumber"></ion-icon>
+
+<ion-icon name="close-circle-outline" (click)="MultyNumber(sum)" value="addNumber" color="success" ></ion-icon>
 </ion-item><ion-item>
-  answer:{{sum}}
-  </ion-item>
+  answer: {{sum}}
+</ion-item>
 </ion-card-content>
 </ion-card>
 </ion-col>
