@@ -10,27 +10,20 @@
 </ion-card-header>
 <ion-card-content>
 <ion-item>
-<ion-input placeholder="number1" name="number1" [(ngModel)]="number1"></ion-input></ion-item>
+<ion-input type="text" placeholder="number1" name="FirstNumber" [(ngModel)]="FirstNumber"></ion-input></ion-item>
 <ion-item>
-<ion-input placeholder="number2" name="number2" [(ngModel)]="number2"></ion-input>
+<ion-input type="text" placeholder="number2" name="SecondNumber" [(ngModel)]="SecondNumber"></ion-input>
 </ion-item><ion-item>
-<ion-icon name="add-circle-outline" color="primary" (click)="addNumber()"></ion-icon>
-&nbsp; &nbsp; &nbsp;
-<ion-icon name="remove-circle-outline" color="danger" (click)="minusNumber()"></ion-icon>
-&nbsp; &nbsp; &nbsp;
-<ion-icon name="close-circle-outline" color="success" (click)="multiNumber()"></ion-icon>
-&nbsp; &nbsp; &nbsp;
-<ion-icon name="code-slash-outline" color="dark" (click)="divideNumber()"></ion-icon>
-</ion-item>
+<ion-icon name="add-circle-outline" color="primary" (click)="addNumber(sum)" value="addNumber"></ion-icon>
+</ion-item><ion-item>
+  answer:{{sum}}
+  </ion-item>
 </ion-card-content>
 </ion-card>
 </ion-col>
 </ion-row>
 </ion-grid>
 </ion-list>
-
-
-
 
 
 
