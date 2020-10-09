@@ -1,4 +1,4 @@
-<ion-list>
+
   <p><a href routerLink="/about" > ABOUT </a>
 &nbsp; &nbsp; &nbsp;
 <a href routerLink="/projects"> PROJECTS </a></p>
@@ -8,13 +8,13 @@
 <div class="ion-text-nowrap">
 <ion-card>
 <ion-card-header>
-<ion-card-subtitle color="success">calculator</ion-card-subtitle>
+<ion-card-subtitle color="dark">calculator</ion-card-subtitle>
 </ion-card-header>
 <ion-card-content>
 <ion-item>
-<ion-input type="text" placeholder="number1" name="FirstNumber" [(ngModel)]="FirstNumber"></ion-input></ion-item>
+<ion-input type="text" placeholder="Type your First Number" name="FirstNumber" [(ngModel)]="FirstNumber"></ion-input></ion-item>
 <ion-item>
-<ion-input type="text" placeholder="number2" name="SecondNumber" [(ngModel)]="SecondNumber"></ion-input>
+<ion-input type="text" placeholder="Type your Second Number" name="SecondNumber" [(ngModel)]="SecondNumber"></ion-input>
 </ion-item>
 <ion-item text-wrap>
 <ion-icon name="add-circle-outline" color="primary" (click)="addNumber(sum)" value="addNumber"></ion-icon>
@@ -35,6 +35,8 @@ answer: {{sum}}
 </ion-col>
 </ion-row>
 </ion-grid>
+
+
 
 
 

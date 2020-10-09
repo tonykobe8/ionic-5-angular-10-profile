@@ -10,3 +10,6 @@ a{
   color:black ;
   font-size: 20px; 
 }
+ion-card{
+   background-color: rgba(0, 202, 192, 0.897);
+}
