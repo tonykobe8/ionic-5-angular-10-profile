@@ -18,20 +18,19 @@ constructor() { }
   
 addNumber(){
   this.sum = parseInt(this.FirstNumber) + parseInt(this.SecondNumber);
-console.log(this.sum)
 }
 MinusNumber(){
   this.sum = parseInt(this.FirstNumber) - parseInt(this.SecondNumber);
-console.log(this.sum)
+
 }
 divideNumber(){
   this.sum = parseInt(this.FirstNumber) / parseInt(this.SecondNumber);
-console.log(this.sum)
+
 }
 
 MultyNumber(){
   this.sum = parseInt(this.FirstNumber) * parseInt(this.SecondNumber);
-console.log(this.sum)
+
 }
 
 }
