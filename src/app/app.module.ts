@@ -11,11 +11,12 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { RedirectGuard} from './redirect.guard';
 import { EducationComponent } from './education/education.component';
-import { ExperienceComponent } from './experience/experience.component';
+
 import { HomeComponent } from './home/home.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
-  declarations: [AppComponent, ProfileComponent, AboutComponent, ProjectsComponent, EducationComponent, ExperienceComponent, HomeComponent],
+  declarations: [AppComponent, ProfileComponent, AboutComponent, ProjectsComponent, EducationComponent,  HomeComponent, ExperienceComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
   providers: [RedirectGuard],
